@@ -1,6 +1,7 @@
 """Модуль с тестируемым кодом."""
 import re
 
+
 def valid_email(email: str) -> bool:
     """
     Check is email correct.
@@ -18,5 +19,5 @@ def log(file_name: str, text: str) -> None:
     :param file_name:
     :param text:
     """
-    with open(file_name, "w") as f_obj:
+    with open(file_name, "a+") as f_obj:
         f_obj.write(text)
